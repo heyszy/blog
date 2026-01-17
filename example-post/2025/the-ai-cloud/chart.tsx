@@ -11,7 +11,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { A } from "../../components/a";
+import { A } from "../../../app/(post)/components/a";
 import data from "./downloads.json";
 
 const CustomLegend = (props: any) => {

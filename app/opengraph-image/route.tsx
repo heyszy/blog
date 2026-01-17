@@ -26,7 +26,7 @@ export async function GET() {
       >
         <header tw="flex text-[36px] w-full">
           <div style={font("Geist Medium")}>
-            Guillermo Rauch
+            Zheyu
           </div>
           <div tw="grow" />
           <div tw="text-[28px]">rauchg.com</div>

@@ -1,4 +1,4 @@
-import { A } from '../../components/a'
+import { A } from '../../../app/(post)/components/a'
 
 export function Table() {
   return (

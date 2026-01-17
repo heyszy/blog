@@ -7,9 +7,9 @@ import { join } from "path";
 import commaNumber from "comma-number";
 
 // Image
-const rauchgPhoto = toArrayBuffer(
-  readFileSync(join(process.cwd(), "public/images/rauchg.png"))
-);
+// const rauchgPhoto = toArrayBuffer(
+//   readFileSync(join(process.cwd(), "public/images/rauchg.png"))
+// );
 
 // Fonts
 const fontsDir = join(process.cwd(), "fonts");
@@ -29,19 +29,19 @@ export async function GET() {
       <div tw="flex p-10 h-full w-full bg-white flex-col" style={font("Geist")}>
         <main tw="flex grow pt-4 w-full justify-center items-center">
           <div tw="flex flex-row">
-            <div tw="flex">
+            {/* <div tw="flex"> */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              {/* <img
                 tw="h-74"
-                alt="Guillermo Rauch"
+                alt="Zheyu"
                 // @ts-ignore
                 src={rauchgPhoto}
-              />
-            </div>
+              /> */}
+            {/* </div> */}
 
             <div tw="flex flex-col px-10 grow text-[28px] h-70 justify-center">
               <div tw="text-[64px] mb-7" style={font("Geist Medium")}>
-                Guillermo Rauch
+                Zheyu
               </div>
               <div tw="flex mb-5" style={font("Geist Mono")}>
                 <span tw="text-gray-400 mr-3">&mdash;</span> CEO and Founder of

@@ -33,6 +33,13 @@ module.exports = withMDX({
         pathname: "/**",
         search: "",
       },
+      // 允许博客图床域名，避免 Next/Image 远程图片被拦截
+      {
+        protocol: "https",
+        hostname: "blog-r2.shen-zy.uk",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   redirects() {

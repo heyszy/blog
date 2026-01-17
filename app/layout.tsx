@@ -18,21 +18,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Guillermo Rauch's blog",
+  title: "Zheyu's blog",
   description:
-    "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "Zheyu is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
   openGraph: {
-    title: "Guillermo Rauchg's blog",
+    title: "Zheyu's blog",
     description:
-      "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+      "Zheyu is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
     url: "https://rauchg.com",
-    siteName: "Guillermo Rauchg's blog",
+    siteName: "Zheyu's blog",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rauchg",
-    creator: "@rauchg",
+    site: "@Creed_Shen",
+    creator: "@Creed_Shen",
   },
   metadataBase: new URL("https://rauchg.com"),
 };
