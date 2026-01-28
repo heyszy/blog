@@ -4,6 +4,7 @@ import { ImageResponse } from "next/og";
 import { getPosts } from "@/app/get-posts";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { SITE_HOSTNAME } from "@/app/site";
 
 export async function generateStaticParams() {
   return (await getPosts()).map(post => ({ id: post.id }));
@@ -76,7 +77,7 @@ export async function GET(_req: Request, props) {
             Zheyu
           </div>
           <div tw="grow" />
-          <div tw="text-[28px]">rauchg.com</div>
+          <div tw="text-[28px]">{SITE_HOSTNAME}</div>
         </header>
 
         <main tw="flex grow pb-3 flex-col items-center justify-center">

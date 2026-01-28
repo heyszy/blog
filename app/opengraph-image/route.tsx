@@ -4,6 +4,7 @@ import { ImageResponse } from "next/og";
 import { getPosts } from "@/app/get-posts";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { SITE_HOSTNAME } from "@/app/site";
 
 const fontsDir = join(process.cwd(), "fonts");
 
@@ -29,7 +30,7 @@ export async function GET() {
             Zheyu
           </div>
           <div tw="grow" />
-          <div tw="text-[28px]">rauchg.com</div>
+          <div tw="text-[28px]">{SITE_HOSTNAME}</div>
         </header>
 
         <main tw="flex mt-10 flex-col w-full">

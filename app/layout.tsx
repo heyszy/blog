@@ -5,6 +5,7 @@ import { Analytics } from "./analytics";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { doge } from "./doge";
+import { SITE_ORIGIN } from "./site";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -20,12 +21,12 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Zheyu's blog",
   description:
-    "Zheyu is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "Zheyu is a software engineer who loves surfing the web3 wave.",
   openGraph: {
     title: "Zheyu's blog",
     description:
-      "Zheyu is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
-    url: "https://rauchg.com",
+      "Zheyu is a software engineer who loves surfing the web3 wave.",
+    url: SITE_ORIGIN,
     siteName: "Zheyu's blog",
     images: ["/opengraph-image"],
   },
@@ -34,7 +35,7 @@ export const metadata = {
     site: "@Creed_Shen",
     creator: "@Creed_Shen",
   },
-  metadataBase: new URL("https://rauchg.com"),
+  metadataBase: new URL(SITE_ORIGIN),
 };
 
 export const viewport = {
