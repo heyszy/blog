@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "id": "trading-principles",
+      "date": "Jan 28, 2026",
+      "title": "我的交易原则"
+    },
+    {
       "id": "vibe-coding",
       "date": "Jan 1, 2026",
       "title": "关于 Vibe Coding 的思考"

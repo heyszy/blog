@@ -39,6 +39,32 @@ export async function GET(_req: Request, props) {
     return new Response("Not found", { status: 404 });
   }
 
+  if (id === "trading-principles") {
+    return new ImageResponse(
+      (
+        <div
+          tw="flex h-full w-full items-center justify-center bg-black"
+          style={font("Geist Medium")}
+        >
+          <div tw="text-white text-7xl tracking-wide">
+            我的交易原则
+          </div>
+        </div>
+      ),
+      {
+        width: 1200,
+        height: 630,
+        fonts: [
+          {
+            name: "Geist Medium",
+            data: geistSansMedium,
+            weight: 500,
+          },
+        ],
+      }
+    );
+  }
+
   return new ImageResponse(
     (
       <div
