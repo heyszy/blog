@@ -1,6 +1,6 @@
 # Zheyu Blog
 
-这是 Zheyu 的个人博客，基于 Next.js，部署在 Vercel 上。
+这是 Zheyu 的个人博客，源自 [rauchg's blog](https://github.com/rauchg/blog)，基于 Next.js，部署在 Vercel 上。
 
 ## 运行方式
 
