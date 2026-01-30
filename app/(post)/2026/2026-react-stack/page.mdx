@@ -1,0 +1,65 @@
+export const metadata = {
+  title: "2026 React 技术栈",
+  description: "为 Vibe Coding 推荐的 2026 年 React 技术栈，非 Vibe Coding 同样适用。",
+  openGraph: {
+    title: "2026 React 技术栈",
+    description: "为 Vibe Coding 推荐的 2026 年 React 技术栈，非 Vibe Coding 同样适用。",
+    images: [{ url: "/og/2026-react-stack" }],
+  },
+};
+
+AI 改变了我们的编程方式，越来越多不会编程的人开始尝试 Vibe Coding。如果你让 AI 为你构建前端应用，AI 几乎 100% 会选择 React 作为技术方案。这并不是因为 React 比 Vue 或是 Svelte 更优秀，而是因为 AI 模型训练自数以百万计的 Github 仓库，这其中大部分都是用 React 构建的。所以 AI 天然更擅长使用 React 相关的技术栈。
+
+但是仅仅用 React 是不够的，React 有着丰富的生态，要和 AI 能够更好的配合起来，我们需要那些代码结构直白、文档清晰、几乎没有“魔法”，能让 AI 在阅读、编写和调试时不容易产生幻觉的技术栈。这篇文章正是为此而生，请让我给你推荐当前最适合 Vibe Coding 的 React 技术栈。
+
+## 核心：React ➕ TypeScript
+
+[React](https://react.dev) 和 [TypeScript](https://www.typescriptlang.org) 相辅相成，如果你正在 Vibe Coding，请务必使用 TypeScript。TypeScript 是最强、也是最基本的辅助工具，在开发过程中就能发现潜在问题，和 IDE 搭配增强自动补全功能，代码中的类型还给了 AI 更多上下文来理解并完成开发工作。几乎所有的框架在初始化项目时都可以选择 TypeScript，请一定要钩上。
+
+## 框架：Next.js
+
+[Next.js](https://nextjs.org) 仍然是主流之选。虽然 2025 年底 Next.js 出现了[严重漏洞](https://nextjs.org/blog/CVE-2025-66478)，但严格意义上不算是 Next.js 的锅（实际上是 React 服务器组件的问题）。鉴于 Next.js Vercel 亲儿子的身份和丰富的生态，它仍然是 React 开发绕不开的框架。
+
+## 样式和 UI 库：TailwindCSS 和 shadcn/ui
+
+使用 [TailwindCSS](https://tailwindcss.com/) 和 [shadcn/ui](https://ui.shadcn.com)。原子化的 CSS 方案已经成为主流，并且 TailwindCSS 和 AI 工具的配合非常好，如果你还没有使用过 TailwindCSS，不妨在 2026 年试试。
+
+最适合 tailwindcss 的 UI 库绝对是 shadcn/ui。shadcn/ui 并非一个组件库，而是直接将组件的代码复制到你的项目中。代码完全属于你，你可以修改任何东西。因此 AI 工具可以直接读取和编辑这些文件，没有任何阻碍。
+
+如果你想要炫酷的动画效果，可以看看 [React Bits](https://reactbits.dev)。
+
+## 数据获取：Tanstack Query
+
+[Tanstack Query](https://tanstack.com/query) 绝对是请求管理的标杆。它能够处理所有数据获取、缓存、过期、重试相关的问题。把所有数据获取相关的问题都交给它，能够减少大量数据同步的 bug。事实上 Tanstack 相关的一系列工具都非常好用。
+
+## 路由：Tanstack Router
+
+如果你使用 Next.js，那么你应该使用 App Router。但是如果你用 Vite 相关的技术栈或是 Tanstack Start 来搭建项目，那么 [Tanstack Router](https://tanstack.com/router/latest) 是首选路由库。Tanstack Router 有着几乎最强的类型安全，路由、路径参数和搜索参数都有完整的类型约束，Typescript 能够在编译期发现参数遗漏或是错误。
+
+## 状态管理：Zustand
+
+2026 年，请使用 [Zustand](https://zustand-demo.pmnd.rs) 来做状态管理吧！Zustand 就像 React 原生的 Hook 一样好用，简单、快速，扩展性强，你不再需要繁琐的 Redux。
+
+## 数据验证：Zod
+
+[Zod](https://zod.dev) 经历了多年的考验，是生态最好，教程最多的数据验证库。2025 年 Zod 发布了 V4，带来了更快的速度和更小的体积。如果你对体积有极致的要求，可以试试 Zod Mini（相比 Zod 减小了 6.6 倍）。
+
+## ORM：Drizzle
+
+[Drizzle](https://orm.drizzle.team) 是我最常用的 ORM。Drizzle 专为 Serverless 场景设计，没有任何依赖。Drizzle 的 API 和 SQL 很像，因此只要懂 SQL，上手 Drizzle 就会很容易。当然，[Prisma](https://www.prisma.io) 也是一个很好的选择。
+
+## 鉴权：Better Auth
+
+[Better Auth](https://www.better-auth.com) 是一个框架无关的通用 TypeScript 身份验证和授权框架。它开箱即用地支持电子邮件/密码、社交登录、双因素认证和通行密钥等多种登录方式。支持 PostgreSQL、MySQL、SQLite 等多种数据库，可以使用 Prisma 或 Drizzle 作为 ORM。、它还附带 MCP 服务器，因此 AI 工具可以帮助你实现认证而不使用 API。
+
+## AI SDK：Vercel AI SDK
+
+在项目中调用 LLM API，Vercel 的 [AI SDK](https://ai-sdk.dev) 是我的首选。AI SDK 开箱即用，支持 OpenAI、Anthropic 等几乎所有常见的 LLM 服务商。几乎你能想到的和 LLM 的交互，AI SDK 都提供了。AI Elements 库基于 shadcn/ui 构建了一批 React 组件，用于构建 AI 聊天界面，这能给开发节省大量的时间。
+
+## AI 工具
+
+我一般使用 [Codex](https://openai.com/codex) ，作为 ChatGPT Plus 的一部分，它不需要额外花钱，对于轻度 Vibe Coding 来说够用。当然，[Claude Code](https://claude.com/product/claude-code) 也很不错。Claude Code 比 Codex Cli 在功能上完善很多，创新点也往往来自 Claude Code，比如 Plan Mode、Skills。
+
+但是我想讨论的，不是用哪个 Cli，而是 Skills。我推荐你安装 Vercel 提供的 [Skills](https://github.com/vercel-labs/agent-skills)，包括 `react-best-practices`（React 最佳实践）和 `web-design-guidelines`（Web 设计指引）。如果你在开发 React Native 应用，那也请务必安装 react-native-guidelines。
+
+如果你想找更多的 Skills，Vercel 还开发了一个 [Skills 市场](https://skills.sh)，上文中很多技术栈也能在这里找到最佳实践，比如 `better-auth-best-practices`，只需一行命令即可安装 Skill。

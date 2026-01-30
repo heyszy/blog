@@ -1,6 +1,11 @@
 {
   "posts": [
     {
+      "id": "2026-react-stack",
+      "date": "Jan 30, 2026",
+      "title": "2026 React 技术栈"
+    },
+    {
       "id": "trading-principles",
       "date": "Jan 28, 2026",
       "title": "我的交易原则"
